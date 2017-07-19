@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+.fl{
+	float: left;
+}
+.container{
+	width: 100%;
+	background-color: #eee;
+}
+.container:before{
+	content: '';
+	display: table;
+}
+.header{
+	width: 291px;
+	height: 135px;
+	margin: 30px auto;
+	background: url('../img/reg_logo.png') no-repeat;
+}
+.main{
+	width: 670px;
+	height: 605px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	box-shadow: 2px 2px 2px #ccc;
+	background-color: #f8f8f8;
+}
+.main ul{
+	margin: 70px 0 0 40px;
+	float: left;
+}
+ul li{
+	width: 280px;
+	height: 37px;
+	line-height: 37px;
+	border: 1px solid #ccc;	
+	margin-bottom: 20px;
+}
+.icon-user, .icon-pwd, .icon-email, .icon-name, .icon-id{
+	display: inline-block;
+	position: relative;
+	float: left;
+	top: 5px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	background-color: #f00;
+}
+/* small icon */
+
+.icon-user{
+	background: url('../img/small_icon.png') no-repeat;
+}
+.icon-pwd{
+	background: url('../img/small_icon.png') -26px 0 no-repeat;
+}
+.icon-email{
+	background: url('../img/small_icon.png') -26px -52px no-repeat;
+}
+.icon-name{
+	background: url('../img/small_icon.png') -78px -26px no-repeat;
+}
+.icon-id{
+	background: url('../img/small_icon.png') 0 -52px no-repeat;
+}
+ul li .txt{
+	float: left;
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	/*margin-bottom: 20px;*/
+	border: none;
+	border-color: none
+}
+.main ul li label{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	color: #666;
+}
+.main ul li label a{
+	color: #2db5ee;
+}
+.register{
+	width: 280px;
+	height: 50px;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	background-color: #f4614d;
+	border: none;
+}
+.register:hover{
+	background-color: #F91917;
+}
+.no-border{
+	border: none;
+}
+.ckbox{
+	height: 25px;
+	line-height: 25px;
+}
+.side span{
+	display: inline-block;
+	height: 465px;
+	border-right: 1px solid #ccc;
+	margin: 70px 0 0 50px;
+}
+.side p{
+	display: inline-block;
+	float: right;
+	position: relative;
+	right: 50px;
+	color: #666;
+	font-size: 14px;
+}
+.side p{	
+	top: 70px;
+}
+.side p a{
+	color: #2db5ee;
+}
+.side p.other{	
+	top: -435px;
+	right: 75px;
+}
+.other a{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.other a.qq{
+	background: url('../img/icon.png') -262px -71px no-repeat;
+	margin-right: 5px;
+}
+.other a.sina{
+	background: url('../img/icon.png') -290px -72px no-repeat;
+}
+.footer{
+	text-align: center;
+	padding: 70px 0;
+}
+.footer p{
+	color: #666;
+	margin-top: 10px;
+	font-size: 12px;
+}

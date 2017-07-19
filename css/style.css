@@ -1,0 +1,318 @@
+/* basic style */
+*{
+	margin: 0;
+	padding: 0;
+}
+ul, li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 75%;
+	margin: 0 auto;
+}
+.container:before, .container:after{
+	content: '';
+	display: table;
+}
+.container:after{
+	clear: both;
+}
+/* header style begin */
+.header{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #ccc;
+}
+.h_menu_fl, .h_menu_fr{
+	text-align: center;
+	margin-top: 5px;
+}
+.h_menu_fl{
+	float: left;
+	margin-left: 20;
+}
+.h_menu_fr{
+	float: right;
+	margin-right: 20px;
+}
+.h_menu_fl li, .h_menu_fr li{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-left: 15px;
+}
+.h_menu_fl li a, .h_menu_fr li a{	
+	font-size: 12px;
+	color: #666;
+}
+.h_menu_fl li b, .h_menu_fr li b{
+	border-left: 1px dashed #ccc;
+	margin-right: 10px;
+}
+.h_menu_fl li a span, .h_menu_fr li a span{
+	display: inline-block;
+	height: 14px;
+	width: 14px;	
+	position: relative;
+	top: 3px;	
+}
+.h_menu_fl li.android a span{
+	background: url('../img/icon.png') -55px 0 no-repeat;
+}
+.h_menu_fl li.iphone a span{
+	background: url('../img/icon.png') -73px 0 no-repeat;	
+}
+.h_menu_fr li.login a span{
+	background: url('../img/icon.png') -37px 0 no-repeat;
+}
+.h_menu_fr li.register a span{
+	background: url('../img/icon.png') -35px -37px; no-repeat;
+}
+.h_menu_fr li.desktop a span{
+	background: url('../img/icon.png') 0 0 no-repeat;
+}
+.h_menu_fr li.collect a span{
+	background: url('../img/icon.png') -18px 0 no-repeat;
+}
+.h_menu_fl li a.curr, .h_menu_fl li a:hover, .h_menu_fr li a:hover{
+	color: #fb770c;
+}
+/* header style end */
+
+/* navbar style begin */
+.navbar{
+	margin-bottom: 10px;
+}
+.logo{
+	float: left;
+	display: inline-block;
+	width: 201px;
+	height: 71px;
+	margin: 20px 10px;
+	background: url('../img/99logo.png') no-repeat;
+}
+.menu{
+	float: right;
+}
+.menu li{
+	float: left;
+	display: inline-block;
+	margin: 50px 15px 0 20px;
+}
+.menu li a h4{
+	font-size: 15px;
+}
+.menu li a{
+	width: 60px;
+	height: 40px;
+	color: #222;
+	font-size: 11px;
+	padding-bottom: 5px;
+}
+.menu li.curr, .menu li:hover{	
+	border-bottom: 2px solid #fe790e;
+}
+.menu li a.curr, .menu li a:hover{
+ 	color: #fe790e;
+ }
+/* nav style end */
+
+/* banner style begin */
+.banner{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	background: url('../img/banner.jpg') -270px;
+	margin-bottom: 10px;
+}
+.loginBox{
+	width: 270px;
+	height: 300px;
+	background-color: #3c3c3c;
+}
+.loginBox:before, .loginBox:after{
+	content: '';
+	display: table;
+}
+.loginBox:after{
+	clear: both;
+}
+.loginBox form{
+	margin: 65px 32px;  
+}
+.loginBox ul li{
+	width: 200px;
+	height: 30px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.username, .password{
+	display: inline-block;
+	padding-left: 35px;
+	width: 170px;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	background-color: rgba(255,255,255,0.5);
+	color: #393939;
+}
+.icon-user, .icon-pwd{
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	width: 15px;
+	height: 15px;
+	/*background-color: #f00;*/
+}
+.icon-user{
+	background: url('../img/icon_ui.png') 0 0 no-repeat;
+}
+.icon-pwd{
+	background: url('../img/icon_ui.png') 0 -30px no-repeat;
+}
+.loginBox ul li label{
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+	top: -2px;
+}
+.forget{
+	display: inline-block;
+	float: right;
+	position: relative;
+	/*right: 30px;*/
+	width: 15px;
+	height: 15px;
+	background: url('../img/icon_ui.png') -1px -60px no-repeat;
+}
+.btn-login{
+	display: inline-block;
+	float: left;
+	width: 205px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 3px;
+	border: none;
+	background-color: #FE3F3E;
+	color: #fff;
+}
+.btn-login:hover{
+	background-color: #F91917;
+}
+.qq, .sina{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+.qq{
+	background: url('../img/icon_ui.png') -91px -110px no-repeat;
+}
+.sina{
+	background: url('../img/icon_ui.png') -47px -111px no-repeat;
+}
+.qq:hover{
+	background: url('../img/icon_ui.png') -91px -91px no-repeat;
+}
+.sina:hover{
+	background: url('../img/icon_ui.png') -47px -91px no-repeat;
+}
+.btn-register{
+	display: inline-block;
+	float: right;
+	width: 72px;
+	height: 20px;
+	background-color: #fc0;
+	border-radius: 20px;
+	border: none;
+	color: #666;
+	font-size: 13px;
+	text-align: center;
+}
+/* banner style end */
+.wrap hr{
+	width: 100%;
+	color: #fafafa;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+/* footer style begin */
+.links{
+	width: 100%;
+	height: 95px;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.link-title{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fafafa;
+	margin-bottom: 10px;
+}
+.link-title h5{
+	display: inline-block;
+	float: left;
+	padding-left: 10px;
+}
+.link-items li{
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 13px;
+}
+.link-title a{
+	display: inline-block;
+	float: right;
+	color: #333;
+	font-size: 12px;
+	padding-right: 10px;
+	letter-spacing: 1px;
+}
+.link-items li a{
+	font-size: 12px;
+	color: #333;
+	float: left;
+}
+.link-items li a:hover{
+	color: #fe790e;
+}
+.declare{
+	text-align: center;
+	font-size: 12px;
+	color: #333;
+}
+.declare ul li{
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+}
+.declare ul li a.wangwen{
+	width: 26px;
+	height: 26px;
+	background: url('../img/wangwen.png');
+}
+.declare a{	
+	font-size: 12px;
+	color: #333;
+}
+.declare ul li a{
+	float: left;
+	margin-right: 5px;
+}
+.declare a:hover{
+	color: #fe790e;
+}
+.cpy{
+	margin-bottom: 10px;
+}
+.cpy p{
+	height: 20px;
+	line-height: 20px;
+}
+/* footer style end */

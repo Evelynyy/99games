@@ -1,0 +1,36 @@
+/* banner style begin */
+.banner{
+	width: 100%;
+	height: 315px;
+	overflow: hidden;
+	background: url('../img/kefu_big.jpg') -300px 0 no-repeat;
+}
+/* banner style end */
+
+/* main style begin */
+.up{
+	margin-top: 30px;
+}
+.up ul li{
+	display: inline-block;
+	width: 165px;
+	height: 142px;
+	border: 1px solid #f00;		/*辅助线*/
+	text-align: center;
+}
+.up ul li a b{
+	display: block;
+	width: 72px;
+	height: 71px;
+	background: url('../img/kf_btn.png') no-repeat;
+	margin: 10px auto;
+}
+.up ul li a span{
+	color: #333;
+	font-size: 14px;
+}
+/* main style end */
+
+.floor2{
+	margin-top: -20px;
+}
